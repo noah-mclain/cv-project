@@ -183,16 +183,23 @@ body {
   color: rgb(203, 192, 255);
 }
 
-.header-links {
+.page-links {
   font-size: xx-large;
+  font-weight: bold;
   padding: 10px;
 }
 
-.header-links a {
+.page-links a,
+.page-links a:active,
+.page-links a:visited {
   color: rgb(163, 142, 204);
-  font-weight: 1000;
   background-color: transparent;
   text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.page-links a:hover {
+  transform: scale(1.5);
 }
 
 .section {
@@ -246,6 +253,7 @@ body {
   font-size: larger;
   background-color: transparent;
   text-decoration: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 .head-link .contact-info a,
@@ -264,4 +272,13 @@ body {
 .head-link .coding-profiles a:visited,
 .head-link a:visited {
   color: rgb(192, 219, 255);
+}
+
+.head-link a:hover {
+  transform: scale(1.05);
+}
+
+.head-link .contact-info a:hover,
+.head-link .coding-profiles a:hover {
+  transform: scale(1.1);
 }
