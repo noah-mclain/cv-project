@@ -31,13 +31,8 @@
 //   });
 // };
 
-
-
-
-
-
 function delay(duration) {
-  return new Promise(resolve => setTimeout(resolve, duration));
+  return new Promise((resolve) => setTimeout(resolve, duration));
 }
 
 window.onload = async function () {
@@ -57,8 +52,3 @@ window.onload = async function () {
     await delay(delayDuration * 1000);
   }
 };
-
-
-
-
-
